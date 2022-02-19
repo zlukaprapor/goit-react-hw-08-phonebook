@@ -46,15 +46,15 @@ npx create-react-app .
 
 ```js
 // index.js
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 ```
 
@@ -64,7 +64,7 @@ ReactDOM.render(
 
 ```js
 // App.js
-import "./App.css";
+import './App.css';
 
 function App() {
   return <div className="App">TEST</div>;
@@ -129,10 +129,10 @@ printWidth: 100
 useTabs: false
 semi: true
 singleQuote: true
-trailingComma: "all"
+trailingComma: 'all'
 bracketSpacing: true
-arrowParens: "avoid"
-proseWrap: "always"
+arrowParens: 'avoid'
+proseWrap: 'always'
 ```
 
 Открыть настройки `VSCode` и проверить следующее:
@@ -211,3 +211,6 @@ git commit -m "test"
 git push
 npm run build
 npm run deploy
+
+npm run deploy
+netlify open --site
