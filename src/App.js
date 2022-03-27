@@ -14,9 +14,7 @@ const LoginView = lazy(() => import('./views/LoginView'));
 const ContactsView = lazy(() => import('./views/ContactsView'));
 
 export default function App() {
-  const isFetchingCurrentUser = useSelector(
-    authSelectors.getIsFetchingCurrentUser
-  );
+  const isFetchingCurrentUser = useSelector(authSelectors.getIsFetchingCurrentUser);
 
   const dispatch = useDispatch();
 
@@ -32,11 +30,7 @@ export default function App() {
         <>
           <AppBar />
           <Switch>
-            <Suspense
-              fallback={
-                <Oval wrapperClass="Loader" arialLabel="loading-indicator" />
-              }
-            >
+            <Suspense fallback={<Oval wrapperClass="Loader" arialLabel="loading-indicator" />}>
               <PublicRoute exact path="/">
                 <HomeView />
               </PublicRoute>

@@ -14,7 +14,6 @@ export const Input = styled.input`
   padding: 10px;
   border: 1px solid #000000;
   border-radius: 4px;
-
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   ::placeholder {
@@ -22,6 +21,6 @@ export const Input = styled.input`
   }
   &:focus {
     outline: transparent;
-    border: 2px solid #9c0b3c;
+    border: 2px solid rgb(18, 16, 172);
   }
 `;
